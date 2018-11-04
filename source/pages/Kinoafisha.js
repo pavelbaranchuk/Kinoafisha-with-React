@@ -12,16 +12,23 @@ export class Kinoafisha extends Component {
   state = {
     selectedFilter: "upcoming",
     selectedMovie: "",
-    movies: []
+    movies: [],
+    sortCriteria: "asc"
   };
 
   componentDidMount() {
     this._getMoviesByFilter(this.state.selectedFilter);
   }
 
-  _getMoviesByFilter = async nextFilter => {
+  _getMoviesByFilter = async (nextFilter, sortCriteria) => {
     const movies = await api.getMovies(nextFilter);
-
+    sortCriteria === "desc"
+      ? movies.sort((a, b) => {
+          return b.release - a.release;
+        })
+      : movies.sort((a, b) => {
+          return a.release - b.release;
+        });
     this.setState({
       movies
     });
@@ -33,8 +40,7 @@ export class Kinoafisha extends Component {
     this.setState({
       selectedFilter: nextFilter
     });
-
-    this._getMoviesByFilter(nextFilter);
+    this._getMoviesByFilter(nextFilter, this.state.sortCriteria);
   };
 
   _selectMovie = movieId => {
@@ -45,9 +51,24 @@ export class Kinoafisha extends Component {
     };
   };
 
+  _sortContent = (event, state) => {
+    return event => {
+      if (this.state.sortCriteria === "asc") {
+        event.currentTarget.classList.add("desc");
+        this.setState({ sortCriteria: "desc" });
+      } else {
+        event.currentTarget.classList.remove("desc");
+        this.setState({ sortCriteria: "asc" });
+      }
+      this._getMoviesByFilter(
+        this.state.selectedFilter,
+        this.state.sortCriteria
+      );
+    };
+  };
+
   render() {
     const styles = getStyles(this.state);
-
     const moviesJSX = this.state.movies.map(movie => {
       const posterStyle = cx("poster", {
         selectedPoster: movie.id === this.state.selectedMovie
@@ -97,6 +118,14 @@ export class Kinoafisha extends Component {
             </div>
           </div>
         </div>
+        <div className="sorting">
+          <button
+            className={styles.sortButton}
+            onClick={this._sortContent(event, this.state)}
+          >
+            по новизне
+          </button>
+        </div>
         <div className="content">{moviesJSX}</div>
         <div className="footer">
           <a href="mailto:team@lectrum.io">tesm@lectrum.io</a>
@@ -105,8 +134,8 @@ export class Kinoafisha extends Component {
             <a href="https://lectrum.io/intensive/react">в Лектруме</a>
           </span>
           <div className="social">
-            <a class="facebook" href="https://www.facebook.com/lectrum/" />
-            <a class="telegram" href="https://t.me/lectrum" />
+            <a className="facebook" href="https://www.facebook.com/lectrum/" />
+            <a className="telegram" href="https://t.me/lectrum" />
           </div>
         </div>
       </>
