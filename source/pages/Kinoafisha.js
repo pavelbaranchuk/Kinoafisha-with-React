@@ -13,7 +13,7 @@ export class Kinoafisha extends Component {
     selectedFilter: "upcoming",
     selectedMovie: "",
     movies: [],
-    sortCriteria: "asc"
+    sortCriteria: ""
   };
 
   componentDidMount() {
@@ -24,9 +24,11 @@ export class Kinoafisha extends Component {
     const movies = await api.getMovies(nextFilter);
     sortCriteria === "desc"
       ? movies.sort((a, b) => {
+          console.log("desc I am here", sortCriteria);
           return b.release - a.release;
         })
       : movies.sort((a, b) => {
+          console.log("empty I am here", sortCriteria);
           return a.release - b.release;
         });
     this.setState({
@@ -53,17 +55,13 @@ export class Kinoafisha extends Component {
 
   _sortContent = (event, state) => {
     return event => {
-      if (this.state.sortCriteria === "asc") {
-        event.currentTarget.classList.add("desc");
-        this.setState({ sortCriteria: "desc" });
+      if (this.state.sortCriteria === "desc") {
+        this.setState({ sortCriteria: "" });
+        this._getMoviesByFilter(this.state.selectedFilter, "");
       } else {
-        event.currentTarget.classList.remove("desc");
-        this.setState({ sortCriteria: "asc" });
+        this.setState({ sortCriteria: "desc" });
+        this._getMoviesByFilter(this.state.selectedFilter, "desc");
       }
-      this._getMoviesByFilter(
-        this.state.selectedFilter,
-        this.state.sortCriteria
-      );
     };
   };
 
