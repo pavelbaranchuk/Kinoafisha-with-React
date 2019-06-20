@@ -1,0 +1,246 @@
+{
+  "html-webpack-plugin for \"index.html\"": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/html-webpack-plugin/lib/loader.js!static/template.html": 0,
+          "node_modules/lodash/lodash.js": 1,
+          "node_modules/webpack/buildin/global.js": 2,
+          "node_modules/webpack/buildin/module.js": 3
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!source/theme/init.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!source/theme/init.css": 0,
+          "node_modules/css-loader/lib/css-base.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "node_modules/react/index.js": 0,
+      "node_modules/object-assign/index.js": 1,
+      "node_modules/react-dom/index.js": 2,
+      "node_modules/babel-loader/lib/index.js!source/index.js": 3,
+      "node_modules/react/cjs/react.production.min.js": 4,
+      "node_modules/react-dom/cjs/react-dom.production.min.js": 5,
+      "node_modules/schedule/index.js": 6,
+      "node_modules/schedule/cjs/schedule.production.min.js": 7,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!source/theme/init.css": 8,
+      "node_modules/babel-loader/lib/index.js!source/test.js": 9,
+      "node_modules/react-hot-loader/index.js": 10,
+      "node_modules/webpack/buildin/harmony-module.js": 11,
+      "node_modules/react-hot-loader/dist/react-hot-loader.production.min.js": 12,
+      "node_modules/cache-loader/dist/cjs.js!node_modules/babel-loader/lib/index.js??ref--4-1!source/test.js": 3,
+      "node_modules/cache-loader/dist/cjs.js!node_modules/babel-loader/lib/index.js??ref--4-1!source/index.js": 9,
+      "node_modules/core-js/modules/_global.js": 3,
+      "node_modules/core-js/modules/_wks.js": 6,
+      "node_modules/classnames/index.js": 7,
+      "node_modules/core-js/modules/_core.js": 8,
+      "node_modules/core-js/modules/_an-object.js": 9,
+      "node_modules/core-js/modules/_is-object.js": 10,
+      "node_modules/core-js/modules/_ctx.js": 11,
+      "node_modules/core-js/modules/_a-function.js": 12,
+      "node_modules/core-js/modules/_descriptors.js": 13,
+      "node_modules/core-js/modules/_cof.js": 14,
+      "node_modules/core-js/modules/_object-dp.js": 15,
+      "node_modules/core-js/modules/es6.promise.js": 16,
+      "node_modules/core-js/modules/_library.js": 17,
+      "node_modules/core-js/modules/_classof.js": 18,
+      "node_modules/core-js/modules/_uid.js": 19,
+      "node_modules/core-js/modules/_hide.js": 20,
+      "node_modules/core-js/modules/_fails.js": 21,
+      "node_modules/core-js/modules/_dom-create.js": 22,
+      "node_modules/core-js/modules/_redefine.js": 23,
+      "node_modules/core-js/modules/_has.js": 24,
+      "node_modules/core-js/modules/_iterators.js": 25,
+      "node_modules/core-js/modules/_task.js": 26,
+      "node_modules/core-js/modules/_new-promise-capability.js": 27,
+      "node_modules/regenerator-runtime/runtime.js": 28,
+      "node_modules/scheduler/index.js": 29,
+      "node_modules/scheduler/cjs/scheduler.production.min.js": 30,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/init.css": 31,
+      "node_modules/core-js/modules/_shared.js": 32,
+      "node_modules/core-js/modules/_export.js": 33,
+      "node_modules/core-js/modules/_ie8-dom-define.js": 34,
+      "node_modules/core-js/modules/_to-primitive.js": 35,
+      "node_modules/core-js/modules/_property-desc.js": 36,
+      "node_modules/core-js/modules/_an-instance.js": 37,
+      "node_modules/core-js/modules/_for-of.js": 38,
+      "node_modules/core-js/modules/_iter-call.js": 39,
+      "node_modules/core-js/modules/_is-array-iter.js": 40,
+      "node_modules/core-js/modules/_to-length.js": 41,
+      "node_modules/core-js/modules/_to-integer.js": 42,
+      "node_modules/core-js/modules/core.get-iterator-method.js": 43,
+      "node_modules/core-js/modules/_species-constructor.js": 44,
+      "node_modules/core-js/modules/_invoke.js": 45,
+      "node_modules/core-js/modules/_html.js": 46,
+      "node_modules/core-js/modules/_microtask.js": 47,
+      "node_modules/core-js/modules/_perform.js": 48,
+      "node_modules/core-js/modules/_user-agent.js": 49,
+      "node_modules/core-js/modules/_promise-resolve.js": 50,
+      "node_modules/core-js/modules/_redefine-all.js": 51,
+      "node_modules/core-js/modules/_set-to-string-tag.js": 52,
+      "node_modules/core-js/modules/_set-species.js": 53,
+      "node_modules/core-js/modules/_iter-detect.js": 54,
+      "node_modules/cache-loader/dist/cjs.js!node_modules/babel-loader/lib/index.js??ref--4-1!source/index.js 40a774c10d9c980c2c4222db04ec5a57": 55
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26,
+      "27": 27,
+      "28": 28,
+      "29": 29,
+      "30": 30,
+      "31": 31,
+      "32": 32,
+      "33": 33,
+      "34": 34,
+      "35": 35,
+      "36": 36,
+      "37": 37,
+      "38": 38,
+      "39": 39,
+      "40": 40,
+      "41": 41,
+      "42": 42,
+      "43": 43,
+      "44": 44,
+      "45": 45,
+      "46": 46,
+      "47": 47,
+      "48": 48,
+      "49": 49,
+      "50": 50,
+      "51": 51,
+      "52": 52,
+      "53": 53,
+      "54": 54,
+      "55": 55
+    }
+  },
+  "chunks": {
+    "byName": {
+      "main": 0
+    },
+    "bySource": {},
+    "usedIds": [
+      0
+    ]
+  },
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/init.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": 0,
+          "node_modules/css-loader/lib/url/escape.js": 1,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/init.css": 2,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!node_modules/sanitize.css/sanitize.css": 3,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/palette.css": 4,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/globals.css": 5,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/workshops/common/styles/welcome.css": 6,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/workshops/Kinoafisha/styles/main.css": 7,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/workshops/Kinoafisha/styles/globals.css": 8,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/workshops/Kinoafisha/styles/header.css": 9,
+          "node_modules/file-loader/dist/cjs.js??ref--8-0!source/theme/workshops/Kinoafisha/images/logo.svg": 10,
+          "node_modules/file-loader/dist/cjs.js??ref--6-0!source/theme/workshops/Kinoafisha/images/filter-1.jpg": 11,
+          "node_modules/file-loader/dist/cjs.js??ref--6-0!source/theme/workshops/Kinoafisha/images/filter-2.jpg": 12,
+          "node_modules/file-loader/dist/cjs.js??ref--6-0!source/theme/workshops/Kinoafisha/images/filter-3.jpg": 13,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/workshops/Kinoafisha/styles/sorting.css": 14,
+          "node_modules/file-loader/dist/cjs.js??ref--8-0!source/theme/workshops/Kinoafisha/images/arrow.svg": 15,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/workshops/Kinoafisha/styles/content.css": 16,
+          "node_modules/css-loader/index.js??ref--9-1!node_modules/postcss-loader/src/index.js??postcss!source/theme/workshops/Kinoafisha/styles/footer.css": 17,
+          "node_modules/file-loader/dist/cjs.js??ref--8-0!source/theme/workshops/Kinoafisha/images/facebook-logo.svg": 18,
+          "node_modules/file-loader/dist/cjs.js??ref--8-0!source/theme/workshops/Kinoafisha/images/telegram-logo.svg": 19
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7,
+          "8": 8,
+          "9": 9,
+          "10": 10,
+          "11": 11,
+          "12": 12,
+          "13": 13,
+          "14": 14,
+          "15": 15,
+          "16": 16,
+          "17": 17,
+          "18": 18,
+          "19": 19
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ]
+}
